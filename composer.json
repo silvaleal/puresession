@@ -1,0 +1,19 @@
+{
+    "name": "silvaleal/puresession",
+    "description": "Biblioteca para facilitar o uso de sessão",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.0.1",
+    "autoload": {
+        "psr-4": {
+            "PureSession\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "silvaleal",
+            "email": "me@silvaleal.dev"
+        }
+    ],
+    "require": {}
+}
