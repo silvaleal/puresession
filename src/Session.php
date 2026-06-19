@@ -30,8 +30,15 @@ class Session
     }
     public function get($key)
     {
-        return $_SESSION[$key];
+        $result = $_SESSION[$key] ?? null; 
+        return $result;
     }
+
+    public function has($key)
+    {
+        return isset($_SESSION[$key]) ? 1 : 0;
+    }
+
     public function remove($key)
     {
         unset($_SESSION[$key]);
