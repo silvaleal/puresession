@@ -8,12 +8,12 @@ Uma forma simplificada para trabalhar com sessão do navegador.
 
 require __DIR__."/../vendor/autoload.php";
 
-use PureSession\Session;
+use PureSession\PureSession;
 
-$pures = new Session();
+PureSession::start();
 
-$pures->start();
+var_dump(PureSession::started());
 
-$pures->set('flash', 11);
+PureSession::set('flash', 11);
 // echo $pures->has('flash');
 ```
