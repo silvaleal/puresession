@@ -1,5 +1,7 @@
 <?php
 
+namespace PureSession;
+
 trait SessionNotStarted {
     protected static function sessionNotStartedCheck() {
         if (!session_status() === PHP_SESSION_ACTIVE) {

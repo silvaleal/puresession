@@ -2,8 +2,8 @@
 
 namespace PureSession;
 
-use SessionNotStarted;
-use SessionStarted;
+use PureSession\SessionNotStarted;
+use PureSession\SessionStarted;
 
 class PureSession
 {
